@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Priyanshu%20Gupta&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI/ML%20Engineer%20%7C%20Building%20Agentic%20%26%20GraphRAG%20Systems&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=AI%2FML+Engineer+%7C+Full-Stack+Developer;Building+Multi-Agent+%26+RAG+Systems;GraphRAG+%7C+LangGraph+%7C+LangChain;Open+to+Tier-1+SWE+%2F+AI-ML+Internships" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=AI%2FML+Engineer+%7C+Full-Stack+Developer;Building+Multi-Agent+%26+RAG+Systems;GraphRAG+%7C+LangGraph+%7C+LangChain;Open+to+Internships" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -40,7 +40,6 @@ I'm a **3rd-year AI/ML engineer** at Vidyalankar Institute of Technology, Mumbai
 - 🧩 Specialize in **RAG systems, multi-agent orchestration (LangGraph/LangChain), and LLM integration**
 - ⚙️ Full-stack capable — FastAPI, Next.js, PostgreSQL, Neo4j, vector databases
 - 🏆 Ranked **top 9% globally** at HackerRank's Orchestrate AI Agent Hackathon
-- 🎯 Selected for **Amazon ML Summer School 2026**
 - 🧪 Product-engineering mindset — I care about *why* an architecture decision was made, not just that it works
 
 **Open To:** AI/ML & SWE Internships (Tier 1) · Agentic AI / RAG Freelance Projects · Open Source Collaboration · Research Discussions
@@ -55,7 +54,7 @@ I'm a **3rd-year AI/ML engineer** at Vidyalankar Institute of Technology, Mumbai
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,java,js,ts,cpp&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=python,java,js,ts&theme=dark"/>
 
 **Frontend**
 
@@ -67,9 +66,8 @@ I'm a **3rd-year AI/ML engineer** at Vidyalankar Institute of Technology, Mumbai
 
 **AI / ML & LLM Tooling**
 
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square"/>
 <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square"/>
-<img src="https://img.shields.io/badge/Groq-F55036?style=flat-square"/>
 <img src="https://img.shields.io/badge/Gemini_2.0_Flash-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/>
 <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white"/>
 <img src="https://img.shields.io/badge/FAISS-4B0082?style=flat-square"/>
@@ -197,16 +195,6 @@ A machine learning pipeline using Random Forest regression to estimate biomass f
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=priy-anshugupta&theme=tokyonight&hide_border=true&background=0d1117&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA" width="49%"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priy-anshugupta&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&text_color=c9d1d9" width="49%"/>
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=priy-anshugupta&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=7"/>
 
 </div>
 
