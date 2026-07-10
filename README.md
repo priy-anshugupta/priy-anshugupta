@@ -20,7 +20,7 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=priy-anshugupta&label=Profile%20Views&color=6D28D9&style=for-the-badge"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=priy-anshugupta.priy-anshugupta&left_color=1a1a2e&right_color=6D28D9&left_text=Profile%20Views"/>
 <img src="https://img.shields.io/github/followers/priy-anshugupta?label=Followers&style=for-the-badge&color=7C3AED&labelColor=1a1a2e"/>
 <img src="https://img.shields.io/github/stars/priy-anshugupta?affiliations=OWNER&style=for-the-badge&color=8B5CF6&labelColor=1a1a2e"/>
 
