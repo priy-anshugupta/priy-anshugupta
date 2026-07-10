@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Priyanshu%20Gupta&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI/ML%20Engineer%20%7C%20Building%20Agentic%20%26%20GraphRAG%20Systems&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Priyanshu%20Gupta&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%2FML%20Engineer%20%7C%20Building%20Agentic%20Systems&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=AI%2FML+Engineer+%7C+Full-Stack+Developer;Building+Multi-Agent+%26+RAG+Systems;GraphRAG+%7C+LangGraph+%7C+LangChain;Open+to+Internships" alt="Typing SVG" />
@@ -20,7 +20,7 @@
 
 <br/><br/>
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=priy-anshugupta.priy-anshugupta&left_color=1a1a2e&right_color=6D28D9&left_text=Profile%20Views"/>
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fpriy-anshugupta&label=Profile%20Views&labelColor=%231a1a2e&countColor=%236D28D9&style=for-the-badge"/>
 <img src="https://img.shields.io/github/followers/priy-anshugupta?label=Followers&style=for-the-badge&color=7C3AED&labelColor=1a1a2e"/>
 <img src="https://img.shields.io/github/stars/priy-anshugupta?affiliations=OWNER&style=for-the-badge&color=8B5CF6&labelColor=1a1a2e"/>
 
