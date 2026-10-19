@@ -53,6 +53,6 @@ I’m an **Information Technology student at Vidyalankar Institute of Technology
 
 <p align="center">
   <em>“Most of the people who've made beautiful things seem to have done it by fixing something that they thought ugly.”</em><br>
-  — <a href="https://www.paulgraham.com/taste.html">Paul Graham</a>
+  <span>— <a href="https://www.paulgraham.com/taste.html">Paul Graham</a></span>
 </p>
 
