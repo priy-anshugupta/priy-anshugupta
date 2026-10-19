@@ -49,5 +49,10 @@ I’m an **Information Technology student at Vidyalankar Institute of Technology
   <img src="https://raw.githubusercontent.com/priy-anshugupta/priy-anshugupta/output/github-contribution-grid-snake.svg" alt="Animated snake following my GitHub contribution graph." width="100%">
 </picture>
 
-<sub>Open to AI/ML & software engineering internships · Terminal refreshed every six hours · Snake updated daily</sub>
+<br>
+
+<p align="center">
+  <em>“Most of the people who've made beautiful things seem to have done it by fixing something that they thought ugly.”</em><br>
+  — <a href="https://www.paulgraham.com/taste.html">Paul Graham</a>
+</p>
 
