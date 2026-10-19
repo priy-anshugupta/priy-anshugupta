@@ -12,7 +12,7 @@ def start(w, h, title):
 
 
 def text(x, y, value, size=16, fill=INK, weight=400, mono=False, extra=''):
-    font = 'Consolas,monospace' if mono else 'Arial,Helvetica,sans-serif'
+    font = 'Consolas,monospace' if mono else 'Segoe UI,Arial,Helvetica,sans-serif'
     return f'<text x="{x}" y="{y}" font-family="{font}" font-size="{size}" font-weight="{weight}" fill="{fill}" {extra}>{escape(value)}</text>'
 
 
@@ -21,41 +21,46 @@ def motion():
 
 
 def header(theme):
-    p = [start(1000, 380, 'Priyanshu Gupta — Agent systems, backend engineering and machine learning. Mumbai. Open to internships.'), motion(),
-         f'<rect width="1000" height="380" rx="22" fill="{PAPER}"/>',
-         '<path d="M38 58H962M38 316H962" stroke="#d0cdc6"/>',
+    p = [start(1000, 420, 'Priyanshu Gupta — Agent systems, backend engineering and machine learning. Mumbai. Open to internships.'), motion(),
+         f'<rect width="1000" height="400" rx="22" fill="{PAPER}"/>',
+         '<path d="M38 58H962M38 330H962" stroke="#d0cdc6"/>',
          text(38,37,'priy-anshugupta',13,INK,mono=True),
-         text(775,37,'MUMBAI, INDIA',12,INK,mono=True,extra='letter-spacing="1"'),
+         text(962,37,'MUMBAI, INDIA',12,INK,mono=True,extra='letter-spacing="1" text-anchor="end"'),
          text(32,160,'Priyanshu',102,INK,700,extra='letter-spacing="-6"'),
          text(32,267,'Gupta',112,INK,700,extra='letter-spacing="-6"'),
          f'<circle cx="366" cy="254" r="10" fill="{ORANGE}"/>',
-         text(38,350,'AI/ML & Software Engineering',20,INK,700),
-         text(714,350,'OPEN TO INTERNSHIPS',12,INK,mono=True),
-         f'<rect x="663" y="78" width="299" height="215" rx="15" fill="{INK}"/>',
-         text(687,107,'WHAT I WORK ON',11,'#aab5c0',mono=True,extra='letter-spacing="1.5"')]
+         text(38,367,'AI/ML & Software Engineering',21,INK,600),
+         '<rect x="704" y="346" width="258" height="36" rx="18" fill="#e0ebe4" stroke="#bccfc2"/>',
+         '<circle cx="724" cy="364" r="4" fill="#2b7a50"/>',
+         text(742,369,'Open to internships',15,'#245c40',600),
+         f'<rect x="642" y="78" width="320" height="228" rx="15" fill="{INK}"/>',
+         text(666,107,'WHAT I WORK ON',11,'#aab5c0',mono=True,extra='letter-spacing="1.5"')]
     for i, (label, tools) in enumerate([
         ('Agentic AI', 'LangGraph · MCP · RAG · OpenAI'),
         ('Backend systems', 'Django · FastAPI · PostgreSQL'),
         ('Machine learning', 'PyTorch · XGBoost · Whisper')
     ]):
-        y = 142 + i * 61
-        p += [text(687,y,label,21,PAPER,700),
-              text(687,y+21,tools,11,'#aab5c0',mono=True)]
+        y = 143 + i * 64
+        p += [text(666,y,label,21,PAPER,600),
+              text(666,y+21,tools,12,'#bcc6cf',mono=True)]
         if i < 2:
-            p.append(f'<path d="M687 {y+32}H938" stroke="#394754"/>')
+            p.append(f'<path d="M666 {y+34}H938" stroke="#394754"/>')
     return ''.join(p)+'</svg>'
 
 
 def contact(name, detail, icon):
-    p=[start(320,88,name+' — '+detail),f'<rect x=".5" y=".5" width="319" height="87" rx="14" fill="{INK}" stroke="#394450"/>',
-       f'<rect x="17" y="21" width="43" height="43" rx="11" fill="#263342"/>']
+    tint, accent = {'web':('#402c29','#f2aa83'), 'in':('#24304d','#a4b4ff'), 'mail':('#203b39','#80d4bd')}[icon]
+    p=[start(320,88,name+' — '+detail),
+       f'<defs><linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{INK}"/><stop offset="1" stop-color="{tint}"/></linearGradient></defs>',
+       '<rect x=".5" y=".5" width="319" height="87" rx="14" fill="url(#card)" stroke="#394450"/>',
+       f'<rect x="17" y="21" width="43" height="43" rx="11" fill="{tint}"/>']
     if icon=='web':
-        p.append(f'<g stroke="{PAPER}" stroke-width="1.4" fill="none"><circle cx="38" cy="42" r="11"/><ellipse cx="38" cy="42" rx="5" ry="11"/><path d="M27 42H49M29 37H47M29 47H47"/></g>')
+        p.append(f'<g stroke="{accent}" stroke-width="1.4" fill="none"><circle cx="38" cy="42" r="11"/><ellipse cx="38" cy="42" rx="5" ry="11"/><path d="M27 42H49M29 37H47M29 47H47"/></g>')
     elif icon=='mail':
-        p.append(f'<g stroke="{PAPER}" stroke-width="1.5" fill="none"><rect x="26" y="34" width="24" height="17" rx="2"/><path d="M27 35L38 44L49 35"/></g>')
+        p.append(f'<g stroke="{accent}" stroke-width="1.5" fill="none"><rect x="26" y="34" width="24" height="17" rx="2"/><path d="M27 35L38 44L49 35"/></g>')
     else:
-        p.append(text(29,49,'in',23,PAPER,700))
-    p += [text(75,39,name,18,PAPER,700),text(75,60,detail,10,'#aab5c0',mono=True),f'<path d="M282 29H296V43M296 29L279 46" stroke="{ORANGE}" stroke-width="2" fill="none"/>']
+        p.append(text(29,49,'in',23,accent,700))
+    p += [text(75,39,name,18,PAPER,600),text(75,60,detail,10,'#c1cad3',mono=True),f'<path d="M282 29H296V43M296 29L279 46" stroke="{accent}" stroke-width="2" fill="none"/>']
     return ''.join(p)+'</svg>'
 
 

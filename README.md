@@ -28,8 +28,6 @@ I’m an **Information Technology student at Vidyalankar Institute of Technology
 
 <a href="https://github.com/priy-anshugupta/Code-MRI"><img src="./assets/project-codemri.svg" alt="Code MRI — static repository analysis and RAG-based onboarding. FastAPI, Next.js, TypeScript, FAISS. Open repository." width="100%"></a>
 
-Also built: [RAG support agent ↗](https://github.com/priy-anshugupta/rag-support-agent) · [BlueQuant ↗](https://github.com/Aashutosh-Mahajan/BlueQuant) <sub>(group project)</sub>
-
 ### Tech stack
 
 **Languages & frontend**  
