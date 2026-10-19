@@ -1,0 +1,55 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <img src="./assets/header-light.svg" alt="Priyanshu Gupta — Agentic AI: LangGraph, MCP, RAG, OpenAI. Backend systems: Django, FastAPI, PostgreSQL. Machine learning: PyTorch, XGBoost, Whisper. Mumbai, India. Open to internships." width="100%">
+</picture>
+
+<br>
+
+<a href="https://priyanshugupta26-portfolio.netlify.app"><img src="./assets/contact-portfolio.svg" alt="Portfolio — selected work and demos" width="32%"></a>
+<a href="https://www.linkedin.com/in/priyanshu-gupta-039810328/"><img src="./assets/contact-linkedin.svg" alt="LinkedIn — connect with Priyanshu Gupta" width="32%"></a>
+<a href="mailto:priyanshug26005@gmail.com"><img src="./assets/contact-email.svg" alt="Email Priyanshu Gupta" width="32%"></a>
+
+### About
+
+I’m an **Information Technology student at Vidyalankar Institute of Technology, Mumbai**. I build **agent workflows and RAG applications**, **backend APIs and data services**, and **machine learning pipelines**, with full-stack interfaces to bring them together.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <img src="./assets/activity-light.svg" alt="Animated terminal: Priyanshu Gupta, AI and software engineering. Interests: agent workflows, backend services and machine learning. VIT IT class of 2028, CGPA 9.83. Real public GitHub activity refreshed every six hours." width="100%">
+</picture>
+
+### Selected projects
+
+<a href="https://github.com/priy-anshugupta/Plexus"><img src="./assets/project-plexus.svg" alt="Plexus — GraphRAG for codebase security. Python, LangGraph, Neo4j, FastAPI. Open repository." width="100%"></a>
+
+<a href="https://github.com/priy-anshugupta/Sanket-AI"><img src="./assets/project-sanket.svg" alt="Sanket AI — industrial safety signals and incident-risk analysis. Next.js, FastAPI, PostgreSQL, Whisper. Open repository." width="100%"></a>
+
+<a href="https://github.com/priy-anshugupta/Finbuddy_AI_Based_Financial_Assistant"><img src="./assets/project-finbuddy.svg" alt="FinBuddy — personal finance with 13 specialised agents and human confirmation. Python, LangChain, Groq, MCP. Open repository." width="100%"></a>
+
+<a href="https://github.com/priy-anshugupta/Code-MRI"><img src="./assets/project-codemri.svg" alt="Code MRI — static repository analysis and RAG-based onboarding. FastAPI, Next.js, TypeScript, FAISS. Open repository." width="100%"></a>
+
+Also built: [RAG support agent ↗](https://github.com/priy-anshugupta/rag-support-agent) · [BlueQuant ↗](https://github.com/Aashutosh-Mahajan/BlueQuant) <sub>(group project)</sub>
+
+### Tech stack
+
+**Languages & frontend**  
+<img src="./assets/stack-web.svg" alt="Python, Java, JavaScript, TypeScript, Next.js, React, Tailwind CSS, HTML and CSS" height="40">
+
+**Backend, data & delivery**  
+<img src="./assets/stack-backend.svg" alt="FastAPI, Node.js, PostgreSQL, Redis, Git, GitHub, GitHub Actions, Docker, VS Code and Postman" height="40">
+
+**AI & retrieval**  
+<img src="./assets/langchain.svg" alt="LangChain" height="23"> <img src="./assets/langgraph.svg" alt="LangGraph" height="23"> <img src="./assets/gemini.svg" alt="Gemini" height="23"> <img src="./assets/ollama.svg" alt="Ollama" height="23"> <img src="./assets/neo4j.svg" alt="Neo4j" height="23"> <img src="./assets/sklearn.svg" alt="scikit-learn" height="23"> <img src="./assets/faiss.svg" alt="FAISS vector search" height="23">
+
+**Additional tools**  
+<img src="./assets/stack-added.svg" alt="Django and PyTorch" height="40"> <img src="./assets/openai.svg" alt="OpenAI" height="23"> <img src="./assets/mcp.svg" alt="MCP" height="23"> <img src="./assets/xgboost.svg" alt="XGBoost" height="23"> <img src="./assets/whisper.svg" alt="Whisper" height="23">
+
+### Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/priy-anshugupta/priy-anshugupta/output/github-contribution-grid-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/priy-anshugupta/priy-anshugupta/output/github-contribution-grid-snake.svg" alt="Animated snake following my GitHub contribution graph." width="100%">
+</picture>
+
+<sub>Open to AI/ML & software engineering internships · Terminal refreshed every six hours · Snake updated daily</sub>
+
