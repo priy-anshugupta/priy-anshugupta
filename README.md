@@ -12,8 +12,8 @@
 ### About
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <img src="./assets/activity-light.svg" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=compact-420-fast-v2">
+  <img src="./assets/activity-light.svg?v=compact-420-fast-v2" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
 </picture>
 
 ### Selected projects
