@@ -71,26 +71,26 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
     border = '#34404b' if theme == 'dark' else '#d5d2cc'
     accent = '#ffb185' if theme == 'dark' else '#a34725'
     prompt = '#9ca8ff' if theme == 'dark' else '#4b55be'
-    p = [start(1000,420,'Priyanshu Gupta — education, interests and recognition'), motion(),
-         f'<rect x=".5" y=".5" width="999" height="419" rx="17" fill="{bg}" stroke="{border}"/>',
+    p = [start(1000,450,'Priyanshu Gupta — education, interests and recognition'), motion(),
+         f'<rect x=".5" y=".5" width="999" height="449" rx="17" fill="{bg}" stroke="{border}"/>',
          f'<path d="M1 39H999" stroke="{border}"/>',
          f'<circle cx="26" cy="21" r="4" fill="{accent}"/><circle cx="43" cy="21" r="4" fill="{muted}"/><circle cx="60" cy="21" r="4" fill="{border}"/>',
          text(500,25,'priyanshu@mumbai: ~',12,muted,mono=True,extra='text-anchor="middle"')]
     lines = [
         (65, '$ whoami', 17, prompt),
         (87, 'Priyanshu Gupta — AI/ML & Software Engineering', 18, fg),
-        (115, '$ cat about.txt', 17, prompt),
-        (137, 'I build agent workflows, backend services and ML pipelines.', 17, fg),
-        (159, 'I’m interested in how models reason, how agents act, and where both break.', 17, fg),
-        (189, '$ cat education.txt', 17, prompt),
-        (211, 'Information Technology · Class of 2028', 18, fg),
-        (233, 'Vidyalankar Institute of Technology, Mumbai', 18, fg),
-        (255, 'CGPA 9.83 / 10', 18, accent),
-        (285, '$ cat recognition.txt', 17, prompt),
-        (307, 'HackerRank Orchestrate · September 2026', 17, fg),
-        (329, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 18, accent),
-        (357, '$ echo $BASE', 17, prompt),
-        (379, 'Mumbai, India', 18, fg),
+        (121, '$ cat about.txt', 17, prompt),
+        (143, 'I build agent workflows, backend services and ML pipelines.', 17, fg),
+        (165, 'I’m interested in how models reason, how agents act, and where both break.', 17, fg),
+        (201, '$ cat education.txt', 17, prompt),
+        (223, 'Information Technology · Class of 2028', 18, fg),
+        (245, 'Vidyalankar Institute of Technology, Mumbai', 18, fg),
+        (267, 'CGPA 9.83 / 10', 18, accent),
+        (303, '$ cat recognition.txt', 17, prompt),
+        (325, 'HackerRank Orchestrate · September 2026', 17, fg),
+        (347, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 18, accent),
+        (381, '$ echo $BASE', 17, prompt),
+        (403, 'Mumbai, India', 18, fg),
     ]
     timings=[]
     elapsed=.15
@@ -111,8 +111,8 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
         p.append(f'<g clip-path="url(#line-{i})">'+text(38,y,value,size,colour,mono=True)+'</g>')
     p.append('<defs>'+''.join(clips)+'</defs>')
     p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:924px}}</style>')
-    p += [text(38,404,'$',17,prompt,mono=True),
-          f'<rect class="cursor" x="56" y="390" width="9" height="17" fill="{prompt}"/>']
+    p += [text(38,434,'$',17,prompt,mono=True),
+          f'<rect class="cursor" x="56" y="420" width="9" height="17" fill="{prompt}"/>']
     return ''.join(p)+'</svg>'
 
 
