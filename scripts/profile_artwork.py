@@ -71,34 +71,34 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
     border = '#34404b' if theme == 'dark' else '#d5d2cc'
     accent = '#ffb185' if theme == 'dark' else '#a34725'
     prompt = '#9ca8ff' if theme == 'dark' else '#4b55be'
-    p = [start(1000,530,'Priyanshu Gupta — education, interests and recognition'), motion(),
-         f'<rect x=".5" y=".5" width="999" height="529" rx="17" fill="{bg}" stroke="{border}"/>',
+    p = [start(1000,490,'Priyanshu Gupta — education, interests and recognition'), motion(),
+         f'<rect x=".5" y=".5" width="999" height="489" rx="17" fill="{bg}" stroke="{border}"/>',
          f'<path d="M1 45H999" stroke="{border}"/>',
          f'<circle cx="26" cy="24" r="5" fill="{accent}"/><circle cx="44" cy="24" r="5" fill="{muted}"/><circle cx="62" cy="24" r="5" fill="{border}"/>',
          text(500,28,'priyanshu@mumbai: ~',13,muted,mono=True,extra='text-anchor="middle"')]
     lines = [
-        (80, '$ whoami', 18, prompt),
-        (108, 'Priyanshu Gupta — AI/ML & Software Engineering', 19, fg),
-        (146, '$ cat about.txt', 18, prompt),
-        (172, 'I build agent workflows, backend services and ML pipelines.', 18, fg),
-        (198, 'I’m interested in how models reason, how agents act, and where both break.', 18, fg),
-        (240, '$ cat education.txt', 18, prompt),
-        (266, 'Information Technology · Class of 2028', 19, fg),
-        (292, 'Vidyalankar Institute of Technology, Mumbai', 19, fg),
-        (318, 'CGPA 9.83 / 10', 19, accent),
-        (360, '$ cat recognition.txt', 18, prompt),
-        (386, 'HackerRank Orchestrate · September 2026', 18, fg),
-        (412, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 19, accent),
-        (450, '$ echo $BASE', 18, prompt),
-        (476, 'Mumbai, India', 19, fg),
+        (76, '$ whoami', 18, prompt),
+        (102, 'Priyanshu Gupta — AI/ML & Software Engineering', 19, fg),
+        (136, '$ cat about.txt', 18, prompt),
+        (160, 'I build agent workflows, backend services and ML pipelines.', 18, fg),
+        (184, 'I’m interested in how models reason, how agents act, and where both break.', 18, fg),
+        (222, '$ cat education.txt', 18, prompt),
+        (246, 'Information Technology · Class of 2028', 19, fg),
+        (270, 'Vidyalankar Institute of Technology, Mumbai', 19, fg),
+        (294, 'CGPA 9.83 / 10', 19, accent),
+        (332, '$ cat recognition.txt', 18, prompt),
+        (356, 'HackerRank Orchestrate · September 2026', 18, fg),
+        (380, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 19, accent),
+        (414, '$ echo $BASE', 18, prompt),
+        (438, 'Mumbai, India', 19, fg),
     ]
     timings=[]
-    elapsed=.4
+    elapsed=.25
     for _,value,_,_ in lines:
-        duration=max(.5,min(2.6,len(value)*(.065 if value.startswith('$') else .04)))
+        duration=max(.35,min(1.8,len(value)*(.045 if value.startswith('$') else .027)))
         timings.append((elapsed,elapsed+duration))
-        elapsed+=duration+.3
-    cycle=round(elapsed+12,2)
+        elapsed+=duration+.18
+    cycle=round(elapsed+10,2)
     rules=[]
     clips=[]
     for i,(y,value,size,colour) in enumerate(lines):
@@ -111,8 +111,8 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
         p.append(f'<g clip-path="url(#line-{i})">'+text(38,y,value,size,colour,mono=True)+'</g>')
     p.append('<defs>'+''.join(clips)+'</defs>')
     p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:924px}}</style>')
-    p += [text(38,508,'$',18,prompt,mono=True),
-          f'<rect class="cursor" x="57" y="493" width="9" height="18" fill="{prompt}"/>']
+    p += [text(38,468,'$',18,prompt,mono=True),
+          f'<rect class="cursor" x="57" y="453" width="9" height="18" fill="{prompt}"/>']
     return ''.join(p)+'</svg>'
 
 
