@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-  <img src="./assets/header-light.svg" alt="Priyanshu Gupta — Agentic AI: LangGraph, MCP, RAG, OpenAI. Backend systems: Django, FastAPI, PostgreSQL. Machine learning: PyTorch, XGBoost, Whisper. Mumbai, India. Open to internships." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg?v=work-panel-type-v5">
+  <img src="./assets/header-light.svg?v=work-panel-type-v5" alt="Priyanshu Gupta — Agentic AI: LangGraph, MCP, RAG, OpenAI. Backend systems: Django, FastAPI, PostgreSQL. Machine learning: PyTorch, XGBoost, Whisper. Mumbai, India. Open to internships." width="100%">
 </picture>
 
 <br>
@@ -12,8 +12,8 @@
 ### About
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=balanced-450-fast-v3">
-  <img src="./assets/activity-light.svg?v=balanced-450-fast-v3" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=reference-spacing-draft-v4">
+  <img src="./assets/activity-light.svg?v=reference-spacing-draft-v4" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
 </picture>
 
 ### Selected projects
@@ -29,16 +29,13 @@
 ### Tech stack
 
 **Languages & frontend**  
-<img src="./assets/stack-web.svg" alt="Python, Java, JavaScript, TypeScript, Next.js, React, Tailwind CSS, HTML and CSS" height="40">
+<img src="./assets/stack-web.svg?v=tech-v2" alt="Python, Java, JavaScript, TypeScript, Next.js, React and Tailwind CSS" height="40">
 
 **Backend, data & delivery**  
-<img src="./assets/stack-backend.svg" alt="FastAPI, Node.js, PostgreSQL, Redis, Git, GitHub, GitHub Actions, Docker, VS Code and Postman" height="40">
+<img src="./assets/stack-backend.svg?v=tech-v2" alt="FastAPI, Django, PostgreSQL, Redis, Git, GitHub, GitHub Actions, Docker and VS Code" height="40">
 
-**AI & retrieval**  
-<img src="./assets/langchain.svg" alt="LangChain" height="23"> <img src="./assets/langgraph.svg" alt="LangGraph" height="23"> <img src="./assets/gemini.svg" alt="Gemini" height="23"> <img src="./assets/ollama.svg" alt="Ollama" height="23"> <img src="./assets/neo4j.svg" alt="Neo4j" height="23"> <img src="./assets/sklearn.svg" alt="scikit-learn" height="23"> <img src="./assets/faiss.svg" alt="FAISS vector search" height="23">
-
-**Additional tools**  
-<img src="./assets/stack-added.svg" alt="Django and PyTorch" height="40"> <img src="./assets/openai.svg" alt="OpenAI" height="23"> <img src="./assets/mcp.svg" alt="MCP" height="23"> <img src="./assets/xgboost.svg" alt="XGBoost" height="23"> <img src="./assets/whisper.svg" alt="Whisper" height="23">
+**AI, ML & retrieval**  
+<img src="./assets/langchain.svg" alt="LangChain" height="23"> <img src="./assets/langgraph.svg" alt="LangGraph" height="23"> <img src="./assets/openai.svg" alt="OpenAI" height="23"> <img src="./assets/mcp.svg" alt="MCP" height="23"> <img src="./assets/ollama.svg" alt="Ollama" height="23"> <img src="./assets/neo4j.svg" alt="Neo4j" height="23"> <img src="./assets/pytorch.svg" alt="PyTorch" height="23"> <img src="./assets/sklearn.svg" alt="scikit-learn" height="23"> <img src="./assets/xgboost.svg" alt="XGBoost" height="23"> <img src="./assets/faiss.svg" alt="FAISS vector search" height="23"> <img src="./assets/whisper.svg" alt="Whisper" height="23">
 
 ### Contributions
 

@@ -34,17 +34,17 @@ def header(theme):
          '<circle cx="724" cy="364" r="4" fill="#2b7a50"/>',
          text(742,369,'Open to internships',15,'#245c40',600),
          f'<rect x="642" y="78" width="320" height="228" rx="15" fill="{INK}"/>',
-         text(666,107,'WHAT I WORK ON',11,'#aab5c0',mono=True,extra='letter-spacing="1.5"')]
+         text(666,107,'WHAT I WORK ON',10,'#8f9daa',600,extra='letter-spacing="1.8"')]
     for i, (label, tools) in enumerate([
         ('Agentic AI', 'LangGraph · MCP · RAG · OpenAI'),
         ('Backend systems', 'Django · FastAPI · PostgreSQL'),
         ('Machine learning', 'PyTorch · XGBoost · Whisper')
     ]):
-        y = 143 + i * 64
-        p += [text(666,y,label,21,PAPER,600),
-              text(666,y+21,tools,12,'#bcc6cf',mono=True)]
+        y = 140 + i * 64
+        p += [text(666,y,label,19,PAPER,600,extra='letter-spacing="-.2"'),
+              text(666,y+23,tools,12.5,'#aebbc7',extra='letter-spacing=".15"')]
         if i < 2:
-            p.append(f'<path d="M666 {y+34}H938" stroke="#394754"/>')
+            p.append(f'<path d="M666 {y+37}H938" stroke="#303e4a" stroke-opacity=".8"/>')
     return ''.join(p)+'</svg>'
 
 
@@ -71,26 +71,25 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
     border = '#34404b' if theme == 'dark' else '#d5d2cc'
     accent = '#ffb185' if theme == 'dark' else '#a34725'
     prompt = '#9ca8ff' if theme == 'dark' else '#4b55be'
-    p = [start(1000,450,'Priyanshu Gupta — education, interests and recognition'), motion(),
-         f'<rect x=".5" y=".5" width="999" height="449" rx="17" fill="{bg}" stroke="{border}"/>',
-         f'<path d="M1 39H999" stroke="{border}"/>',
-         f'<circle cx="26" cy="21" r="4" fill="{accent}"/><circle cx="43" cy="21" r="4" fill="{muted}"/><circle cx="60" cy="21" r="4" fill="{border}"/>',
-         text(500,25,'priyanshu@mumbai: ~',12,muted,mono=True,extra='text-anchor="middle"')]
+    p = [start(1000,550,'Priyanshu Gupta — education, interests and recognition'), motion(),
+         f'<rect x=".5" y=".5" width="999" height="549" rx="19" fill="{bg}" stroke="{border}"/>',
+         f'<path d="M1 48H999" stroke="{border}"/>',
+         f'<circle cx="30" cy="24" r="5.5" fill="{accent}"/><circle cx="50" cy="24" r="5.5" fill="{muted}"/><circle cx="70" cy="24" r="5.5" fill="{border}"/>',
+         text(500,28,'priyanshu@mumbai: ~',12,muted,mono=True,extra='text-anchor="middle"')]
     lines = [
-        (65, '$ whoami', 17, prompt),
-        (87, 'Priyanshu Gupta — AI/ML & Software Engineering', 18, fg),
-        (121, '$ cat about.txt', 17, prompt),
-        (143, 'I build agent workflows, backend services and ML pipelines.', 17, fg),
-        (165, 'I’m interested in how models reason, how agents act, and where both break.', 17, fg),
-        (201, '$ cat education.txt', 17, prompt),
-        (223, 'Information Technology · Class of 2028', 18, fg),
-        (245, 'Vidyalankar Institute of Technology, Mumbai', 18, fg),
-        (267, 'CGPA 9.83 / 10', 18, accent),
-        (303, '$ cat recognition.txt', 17, prompt),
-        (325, 'HackerRank Orchestrate · September 2026', 17, fg),
-        (347, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 18, accent),
-        (381, '$ echo $BASE', 17, prompt),
-        (403, 'Mumbai, India', 18, fg),
+        (100, '$ whoami', 18, prompt),
+        (130, 'Priyanshu Gupta — AI/ML & Software Engineering', 18, fg),
+        (160, '$ cat about.txt', 18, prompt),
+        (190, 'I build agent workflows, backend services and ML pipelines.', 18, fg),
+        (220, 'I’m interested in how models reason, how agents act, and where both break.', 18, fg),
+        (250, '$ cat education.txt', 18, prompt),
+        (280, 'Information Technology · Vidyalankar Institute of Technology', 18, fg),
+        (310, 'CGPA 9.83 / 10 · Class of 2028', 18, accent),
+        (340, '$ cat recognition.txt', 18, prompt),
+        (370, 'HackerRank Orchestrate · September 2026', 18, fg),
+        (400, '#65 / 3,062 globally · Top 2.2% · 20+ hackathons', 18, accent),
+        (430, '$ echo $BASE', 18, prompt),
+        (460, 'Mumbai, India', 18, fg),
     ]
     timings=[]
     elapsed=.15
@@ -104,15 +103,19 @@ def terminal(theme, profile=None, events=None, stamp=None, rows=None):
     for i,(y,value,size,colour) in enumerate(lines):
         begin=timings[i][0]/cycle*100
         end=timings[i][1]/cycle*100
-        width=min(924,len(value)*size*.63+8)
+        width=min(876,len(value)*size*.63+8)
         rules.append(f'.line-{i}{{animation:line-{i} {cycle}s steps({len(value)},end) infinite}}'
                      f'@keyframes line-{i}{{0%,{begin:.3f}%{{width:0px}}{end:.3f}%,100%{{width:{width:.1f}px}}}}')
-        clips.append(f'<clipPath id="line-{i}"><rect class="line-{i}" x="38" y="{y-size-4}" width="924" height="{size+10}"/></clipPath>')
-        p.append(f'<g clip-path="url(#line-{i})">'+text(38,y,value,size,colour,mono=True)+'</g>')
+        clips.append(f'<clipPath id="line-{i}"><rect class="line-{i}" x="62" y="{y-size-4}" width="876" height="{size+10}"/></clipPath>')
+        line=text(62,y,value,size,colour,mono=True)
+        if y == 130:
+            role=escape('AI/ML & Software Engineering')
+            line=line.replace(role,f'<tspan fill="{accent}">{role}</tspan>')
+        p.append(f'<g clip-path="url(#line-{i})">'+line+'</g>')
     p.append('<defs>'+''.join(clips)+'</defs>')
-    p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:924px}}</style>')
-    p += [text(38,434,'$',17,prompt,mono=True),
-          f'<rect class="cursor" x="56" y="420" width="9" height="17" fill="{prompt}"/>']
+    p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:876px}}</style>')
+    p += [text(62,490,'$',18,prompt,mono=True),
+          f'<rect class="cursor" x="81" y="475" width="10" height="19" fill="{prompt}"/>']
     return ''.join(p)+'</svg>'
 
 
