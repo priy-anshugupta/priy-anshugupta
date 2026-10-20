@@ -64,50 +64,57 @@ def contact(name, detail, icon):
     return ''.join(p)+'</svg>'
 
 
-def terminal(theme,profile,events,stamp,rows):
-    bg='#111820' if theme=='dark' else '#f5f3ee'
-    fg=PAPER if theme=='dark' else INK
-    muted='#aab5c0' if theme=='dark' else '#596575'
-    border='#34404b' if theme=='dark' else '#d5d2cc'
-    p=[start(1000,490,'Animated introduction and recent public GitHub activity. Scheduled snapshot, updated every six hours.'),motion(),
-       f'<rect x=".5" y=".5" width="999" height="489" rx="17" fill="{bg}" stroke="{border}"/>',
-       f'<path d="M1 53H999" stroke="{border}"/>',
-       f'<circle cx="26" cy="28" r="5" fill="{ORANGE}"/><circle cx="44" cy="28" r="5" fill="{muted}"/><circle cx="62" cy="28" r="5" fill="{border}"/>',
-       text(500,32,'priyanshu@mumbai: ~/workbench',13,muted,mono=True,extra='text-anchor="middle"'),
-       f'<path d="M32 291H968" stroke="{border}"/>',
-       text(968,325,str(int(profile['public_repos']))+' PUBLIC REPOS',12,muted,mono=True,extra='text-anchor="end"')]
+def terminal(theme, profile=None, events=None, stamp=None, rows=None):
+    bg = '#111820' if theme == 'dark' else '#f5f3ee'
+    fg = PAPER if theme == 'dark' else INK
+    muted = '#aab5c0' if theme == 'dark' else '#596575'
+    border = '#34404b' if theme == 'dark' else '#d5d2cc'
+    accent = '#ffb185' if theme == 'dark' else '#a34725'
+    prompt = '#9ca8ff' if theme == 'dark' else '#4b55be'
+    p = [start(1000,696,'Priyanshu Gupta — education, interests and recognition'), motion(),
+         f'<rect x=".5" y=".5" width="999" height="695" rx="17" fill="{bg}" stroke="{border}"/>',
+         f'<path d="M1 53H999" stroke="{border}"/>',
+         f'<circle cx="26" cy="28" r="5" fill="{accent}"/><circle cx="44" cy="28" r="5" fill="{muted}"/><circle cx="62" cy="28" r="5" fill="{border}"/>',
+         text(500,32,'priyanshu@mumbai: ~',14,muted,mono=True,extra='text-anchor="middle"')]
     lines = [
-        (92, '$ whoami', 18, BLUE),
-        (126, 'Priyanshu Gupta / AI & software engineering', 18, fg),
-        (167, '$ cat interests.txt', 18, BLUE),
-        (201, 'Agent workflows, backend services, machine learning.', 18, fg),
-        (232, 'Currently exploring retrieval and developer security.', 18, fg),
-        (270, 'VIT Mumbai · IT ’28 · CGPA 9.83', 16, muted),
-        (325, '$ gh activity --public', 18, BLUE),
-    ] + [(360+i*30,row,16,fg) for i,row in enumerate(rows or ['No recent public build events returned by GitHub.'])]
-    # Native SVG/CSS only: GitHub displays this animation as an image.
-    # Keep full-width XML attributes as a readable fallback without CSS support.
-    rules=[]
-    clips=[]
+        (94, '$ whoami', 20, prompt),
+        (128, 'Priyanshu Gupta — AI/ML & Software Engineering', 21, fg),
+        (172, '$ cat about.txt', 20, prompt),
+        (206, 'I build agent workflows, backend services and ML pipelines.', 20, fg),
+        (238, 'I’m interested in how models reason, how agents act,', 20, fg),
+        (270, 'and where both break.', 20, fg),
+        (314, '$ cat education.txt', 20, prompt),
+        (348, 'Information Technology · Class of 2028', 21, fg),
+        (382, 'Vidyalankar Institute of Technology, Mumbai', 21, fg),
+        (416, 'CGPA 9.83 / 10', 21, accent),
+        (460, '$ cat recognition.txt', 20, prompt),
+        (494, 'HackerRank Orchestrate · September 2026', 20, fg),
+        (526, '#65 / 3,062 globally · Top 2.2%', 21, accent),
+        (558, '20+ hackathons', 20, fg),
+        (602, '$ echo $BASE', 20, prompt),
+        (636, 'Mumbai, India', 21, fg),
+    ]
     timings=[]
     elapsed=.4
     for _,value,_,_ in lines:
-        typing_seconds=max(.45,min(2.4,len(value)*(.065 if value.startswith('$') else .04)))
-        timings.append((elapsed,elapsed+typing_seconds))
-        elapsed+=typing_seconds+.3
-    cycle=round(elapsed+10,2)
+        duration=max(.5,min(2.6,len(value)*(.065 if value.startswith('$') else .04)))
+        timings.append((elapsed,elapsed+duration))
+        elapsed+=duration+.3
+    cycle=round(elapsed+12,2)
+    rules=[]
+    clips=[]
     for i,(y,value,size,colour) in enumerate(lines):
-        begin = timings[i][0]/cycle*100
-        end = timings[i][1]/cycle*100
-        width = min(936, len(value)*size*.63 + 8)
-        rules.append(f'.line-{i}{{animation:line-{i} {cycle}s steps({max(1,len(value))},end) infinite}}'
-                     f'@keyframes line-{i}{{0%,{begin:.1f}%{{width:0px}}{end:.1f}%,100%{{width:{width:.1f}px}}}}')
-        clips.append(f'<clipPath id="line-{i}"><rect class="line-{i}" x="32" y="{y-size-4}" width="936" height="{size+10}"/></clipPath>')
-        p.append(f'<g clip-path="url(#line-{i})">'+text(32,y,value,size,colour,mono=True)+'</g>')
+        begin=timings[i][0]/cycle*100
+        end=timings[i][1]/cycle*100
+        width=min(924,len(value)*size*.63+8)
+        rules.append(f'.line-{i}{{animation:line-{i} {cycle}s steps({len(value)},end) infinite}}'
+                     f'@keyframes line-{i}{{0%,{begin:.3f}%{{width:0px}}{end:.3f}%,100%{{width:{width:.1f}px}}}}')
+        clips.append(f'<clipPath id="line-{i}"><rect class="line-{i}" x="38" y="{y-size-4}" width="924" height="{size+10}"/></clipPath>')
+        p.append(f'<g clip-path="url(#line-{i})">'+text(38,y,value,size,colour,mono=True)+'</g>')
     p.append('<defs>'+''.join(clips)+'</defs>')
-    p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:936px}}</style>')
-    p += [text(32,463,'$',18,BLUE,mono=True),f'<rect class="cursor" x="51" y="448" width="9" height="18" fill="{ORANGE}"/>',
-          text(90,463,'UPDATED '+stamp+' UTC / EVERY 6 HOURS',12,muted,mono=True)]
+    p.append('<style>'+''.join(rules)+'@media(prefers-reduced-motion:reduce){'+','.join('.line-'+str(i) for i in range(len(lines)))+'{animation:none!important;width:924px}}</style>')
+    p += [text(38,674,'$',20,prompt,mono=True),
+          f'<rect class="cursor" x="59" y="658" width="10" height="20" fill="{prompt}"/>']
     return ''.join(p)+'</svg>'
 
 

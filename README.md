@@ -11,11 +11,9 @@
 
 ### About
 
-I’m an **Information Technology student at Vidyalankar Institute of Technology, Mumbai**. I build **agent workflows and RAG applications**, **backend APIs and data services**, and **machine learning pipelines**, with full-stack interfaces to bring them together.
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <img src="./assets/activity-light.svg" alt="Animated terminal: Priyanshu Gupta, AI and software engineering. Interests: agent workflows, backend services and machine learning. VIT IT class of 2028, CGPA 9.83. Real public GitHub activity refreshed every six hours." width="100%">
+  <img src="./assets/activity-light.svg" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
 </picture>
 
 ### Selected projects
