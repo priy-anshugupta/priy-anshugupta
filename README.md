@@ -16,6 +16,14 @@
   <img src="./assets/activity-light.svg?v=reference-spacing-draft-v4" alt="Animated introduction: Priyanshu Gupta, agent workflows, backend systems and machine learning. Information Technology, Class of 2028, Vidyalankar Institute of Technology Mumbai. CGPA 9.83. Ranked 65 of 3,062 globally, top 2.2%, at HackerRank Orchestrate in September 2026. 20+ hackathons. Mumbai, India." width="100%">
 </picture>
 
+### Open Source Contributions
+
+| Project | Repo stars | Merged contribution |
+| --- | ---: | --- |
+| [FastMCP](https://github.com/PrefectHQ/fastmcp) | 28.4k ⭐ | [#6184](https://github.com/PrefectHQ/fastmcp/pull/6184) · Isolated mutable defaults across transformed tool calls. |
+| [Haystack](https://github.com/deepset-ai/haystack) | 27.0k ⭐ | [#13508](https://github.com/deepset-ai/haystack/pull/13508) · Rejected `NaN` weights in `MetaFieldRanker`. |
+| [Pyjanitor](https://github.com/pyjanitor-devs/pyjanitor) | 1.5k ⭐ | [#1841](https://github.com/pyjanitor-devs/pyjanitor/pull/1841) · Added list and tuple support to `unionize_dataframe_categories`. |
+
 ### Selected projects
 
 <a href="https://github.com/priy-anshugupta/Plexus"><img src="./assets/project-plexus.svg" alt="Plexus — GraphRAG for codebase security. Python, LangGraph, Neo4j, FastAPI. Open repository." width="100%"></a>
