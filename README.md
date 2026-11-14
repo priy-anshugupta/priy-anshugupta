@@ -22,7 +22,7 @@
 | --- | ---: | --- |
 | [FastMCP](https://github.com/PrefectHQ/fastmcp) | 28.4k ⭐ | [#6184](https://github.com/PrefectHQ/fastmcp/pull/6184) · Isolated mutable defaults across transformed tool calls. |
 | [Haystack](https://github.com/deepset-ai/haystack) | 27.0k ⭐ | [#13508](https://github.com/deepset-ai/haystack/pull/13508) · Rejected `NaN` weights in `MetaFieldRanker`. |
-| [Pyjanitor](https://github.com/pyjanitor-devs/pyjanitor) | 1.5k ⭐ | [#1841](https://github.com/pyjanitor-devs/pyjanitor/pull/1841) · Added list and tuple support to `unionize_dataframe_categories`. |
+| [Pyjanitor](https://github.com/pyjanitor-devs/pyjanitor) | 1.5k ⭐ | [#1841](https://github.com/pyjanitor-devs/pyjanitor/pull/1841) · Added list and tuple support to `unionize_dataframe_categories`.<br>[#1842](https://github.com/pyjanitor-devs/pyjanitor/pull/1842) · Sped up `normal_cdf` with `scipy.special.ndtr`, preserving dtype promotion and the original index. |
 
 ### Selected projects
 
